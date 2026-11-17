@@ -1,0 +1,201 @@
+
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap');
+
+/* GENERAL STYLE */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    color: #663344;
+    background-color: #ffe6f0;
+    background-image: radial-gradient(#f7b8d0 1.5px, transparent 1.5px);
+    background-size: 25px 25px;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #ffb6d2, #ffcce0);
+    color: #702d49;
+    text-align: center;
+    padding: 55px 20px;
+    border-bottom: 7px dotted #d94f83;
+    border-radius: 0 0 50px 50px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 38px;
+    margin: 0;
+    text-shadow: 2px 2px white;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* ALL SECTIONS */
+section {
+    padding: 30px;
+    margin-bottom: 35px;
+    background-color: #fff9fc;
+    border: 3px solid #f4a1bd;
+    box-shadow: 7px 7px 0 #eeb1c8;
+}
+
+/* ABOUT ME */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    border-radius: 50px 15px 50px 15px;
+    background-color: #fff8fb;
+}
+
+.photo-placeholder {
+    width: 190px;
+    height: 190px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border: 7px solid #ffb6d2;
+    border-radius: 50%;
+    background-color: #ffd6e5;
+    box-shadow: 4px 4px 0 #e75480;
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bio {
+    flex: 1;
+}
+
+/* DIFFERENT SECTIONS */
+section:nth-of-type(2) {
+    background-color: #fff0f6;
+    border: 3px dashed #e75480;
+    border-radius: 15px 55px 15px 55px;
+}
+
+section:nth-of-type(3) {
+    background-color: #fff9fc;
+    border: 4px solid #f4a1bd;
+    border-radius: 55px 15px 55px 15px;
+}
+
+section:nth-of-type(4) {
+    background-color: #ffeef5;
+    border: 3px dotted #e75480;
+    border-radius: 25px 25px 60px 15px;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+h2 {
+    display: inline-block;
+    color: #c93668;
+    background-color: #ffd1e2;
+    padding: 8px 22px;
+    border: 2px dashed #e75480;
+    border-radius: 25px 12px 25px 12px;
+    font-size: 24px;
+}
+
+h3 {
+    color: #c44575;
+    font-size: 20px;
+}
+
+/* LIST */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li::marker {
+    color: #e75480;
+}
+
+/* LINKS */
+a {
+    color: #c2185b;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px dotted #e75480;
+}
+
+a:hover {
+    color: #8e1745;
+    background-color: #ffd1e2;
+}
+
+/* FOOTER */
+footer {
+    background-color: #e75480;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-top: 7px dotted #ffd1e2;
+    border-radius: 50px 50px 0 0;
+}
+
+/* CANDY DECORATIONS */
+header::before {
+    content: "🍬 🍭 🍬";
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer::after {
+    content: "🍭 🍬 🍭";
+    display: block;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo-placeholder {
+        width: 160px;
+        height: 160px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    main {
+        padding: 12px;
+    }
+}
